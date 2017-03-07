@@ -177,6 +177,8 @@ return [
         CodeProject\Providers\EventServiceProvider::class,
         CodeProject\Providers\RouteServiceProvider::class,
 
+        Prettus\Repository\Providers\RepositoryServiceProvider::class
+
     ],
 
     /*

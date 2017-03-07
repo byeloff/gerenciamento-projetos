@@ -2,7 +2,7 @@
 
 namespace CodeProject\Http\Controllers\Auth;
 
-use CodeProject\User;
+use CodeProject\Entities\User;
 use CodeProject\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;

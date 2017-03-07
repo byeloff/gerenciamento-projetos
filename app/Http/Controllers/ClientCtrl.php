@@ -3,13 +3,14 @@
 namespace CodeProject\Http\Controllers;
 
 use Illuminate\Http\Request;
-use \CodeProject\Client;
+use CodeProject\Repositories\ClientRepository;
+use \CodeProject\Entities\Client;
 
 class ClientCtrl extends Controller
 {
 
-  public function index(){
-    return Client::all();
+  public function index(ClientRepository $repository){
+    return $repository->all();
   }
 
   public function store(Request $request){
